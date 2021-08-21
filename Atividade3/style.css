@@ -1,0 +1,114 @@
+body {
+	font: 100% Arial, Helvetica, sans-serif;
+	background-color: #e0f0ff;
+	background-image: url('iot.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: auto;
+	background-position: center;
+}
+/* 150% do tamanho original "pai"  */
+
+
+h1 {
+	font: Arial, Helvetica, sans-serif;
+}
+
+p, li {
+	text-align: justify;
+}
+
+h1, h2, h3, h4, p, li{
+	margin: 15px;
+}
+
+button {
+	margin: 5px;
+}
+
+#pagina {
+	padding: 5px;
+	width: 960px; /* tamanho mais comum usado */
+	margin: 20px auto;
+}
+
+#cabecalho {
+	height: 160px;
+}
+
+#conteudo {
+	/*width: 600px;
+	float: left;*/
+}
+
+#rodape {
+	clear: both;
+	background: #f8f8ff;
+}
+
+#cabecalho, #conteudo {
+	margin-bottom: 5px;
+	background: #f8f8ff;
+}
+
+	
+#pagina, #cabecalho, #conteudo, #rodape {
+	border: solid 1px #ccc;
+}
+
+#link:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#link:visited {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+}
+#link:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#link:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Media queries/* 
+
+/*  980px ou menor */
+@media screen and (max-width: 980px) {
+	
+	#pagina {
+		width: 94%;
+	}
+	/*#conteudo {
+		width: 65%;
+	}*/
+
+}
+
+/* 700px ou menor  */
+@media screen and (max-width: 700px) {
+
+	#conteudo {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/*  480px or menor  */
+@media screen and (max-width: 480px) {
+
+	#cabecalho {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+
+}
