@@ -1,0 +1,196 @@
+body {
+	margin: 0;
+	background: #fcfcfc;
+    background-repeat: no-repeat;
+	font-family: "Times New Romam", "Arial";
+    background-attachment: fixed;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.topnav a {
+	display: block;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #ed1b24;
+	color: white;
+}
+
+.topnav h1 {
+	display: block;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 0px 22px;
+	text-decoration: none;
+	font-size: 17px;
+	text-shadow: 1px 1px 2px #f00;
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 16px;
+	margin-top: 30px;
+}
+
+.container-box-a, .container-box-b {
+	width: calc(100%/2);
+	min-width: 640px;
+	height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-box2-a, .container-box2-b{
+	width: calc(100%/2);
+	min-width: 640px;
+	height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-box-a {
+	float: left;
+}
+
+.container-box2-a {
+	float: left;
+}
+
+header {
+	overflow: hidden;
+	background-color: #333;
+}
+
+header h1 {
+	color: #fff;
+	text-align: center;
+	text-shadow: 0.5px 0.5px #ed1b24;
+}
+
+section { /* para a barra lateral lista e titulo */
+	/*float: left;*/
+	/*width: 480px;
+	height: 240px;*/
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.article1 {
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	background-image: url(pentakill-terceiro-album.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.article2a, .article2b{
+	width: calc(100% - 40px);
+	height: calc((100%/2) - 40px);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.article2a {
+	background-image: url(homem-aranha-sem-volta-para-casa.jpg);
+}
+
+.article2b {
+	background-image: url(gamescom-2021.jpg);
+}
+
+.article3a, .article3b, .article3c, .article3d {
+	width: calc(100%/2 - 44px);
+	height: calc(100% - 40px);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.article3a {
+	background-image: url(shangchi.png);
+}
+
+.article3b {
+	background-image: url(new-world.jpeg);
+}
+
+.article3c {
+	background-image: url(marvel.jpg);
+}
+
+.article3d {
+	background-image: url(steamdeck_photo_skus.png);
+	background-size: contain;
+}
+
+article {
+	display: flex;
+	background-color: #FFF;
+	border: 2px;
+	border-style: outset;
+	border-color: #CCC #999 #999 #CCC;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+
+article a {
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	align-self: flex-end;
+	bottom: 10px;
+	color: #fff;
+	text-shadow: 3px 3px 5px #000;
+}
+
+article a:hover {
+	color: #f00;
+}
+
+.clear { /* para a imagem nao "ficar fora" quando usa o float */
+	clear: both;
+}
+
+footer {
+	overflow: hidden;
+	background-color: #333;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+footer h2 {
+	text-shadow: 0.4px 0.4px #ed1b24;
+}
+
+p {
+	text-indent: 3ch;
+	text-align: justify;
+}
