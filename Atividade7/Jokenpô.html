@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Jokenpô</title>
+</head>
+<body>
+	<script>
+		var cont = 1, vitorias = 0, derrotas = 0, empates = 0;
+		do{
+			
+			var jogador = prompt("Escolha: \n1 Pedra \n2 Papel \n3 Tesoura");
+			var maquina = Math.ceil(Math.random()*3);
+			
+			if(jogador == 1 || jogador == 2 || jogador == 3){
+			
+				function jokenpo(x){
+					if(x == 1){
+						return "Pedra";
+					}
+					else if (x == 2){
+						return "Papel";
+					}
+					else if (x == 3){
+						return "Tesoura";
+					}
+				}
+				
+				var j = jokenpo(jogador);
+				var m = jokenpo(maquina);
+				
+				
+				alert("você: " + j + "\nMaquína: " + m);
+				
+				
+				
+				if(jogador == maquina){
+					alert("Empate");
+					empates++;
+				}
+				else{
+					if(jogador == 1){
+						if(maquina == 2){
+							alert("Derrota");
+							derrotas++;
+						}
+						else{
+							alert("Vitória");
+							vitorias++;
+						}
+					}
+					else if(jogador == 2){
+						if(maquina == 3){
+							alert("Derrota");
+							derrotas++;
+						}
+						else{
+							alert("Vitória");
+							vitorias++;
+						}
+					}
+					else if(jogador == 3){
+						if(maquina == 1){
+							alert("Derrota");
+							derrotas++;
+						}
+						else{
+							alert("Vitória");
+							vitorias++;
+						}
+					}
+				}
+				
+			}
+			else{
+				alert("Opção inválida");
+			}
+			
+			alert("Vitórias: " + vitorias + "\nDerrotas: " + derrotas + "\nEmpates: " + empates);
+			cont = confirm("Escolha Ok para Continuar");
+		}while(cont == 1);
+	</script>
+</body>
+</html>
