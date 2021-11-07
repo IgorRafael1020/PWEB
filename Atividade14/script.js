@@ -16,15 +16,13 @@ function validar() {
 		alert("Pesquisa Obrigatória");
 		aux = 0;
 	}
-	else{
+	if(aux){
 		if(formulario.sim.checked == true){
 			alert("Volte sempre à está página!");
 		}
 		else{
 			alert("Que bom que você voltou a visitar esta página!");
 		}
-	}
-	if(aux){
 		return true;
 	}else{
 		return false;
