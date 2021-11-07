@@ -1,13 +1,30 @@
-function maiusculo(obj) {
-	var texto = document.getElementById('texto').value;
-	document.getElementById('texto').value = texto.toUpperCase();
-	var checkbox = document.getElementById('minusculo');
-	checkbox.checked = false;
-}
-
-function minusculo(obj) {
-	var texto = document.getElementById('texto').value;
-	document.getElementById('texto').value = texto.toLowerCase();
-	var checkbox = document.getElementById('maiusculo');
-	checkbox.checked = false;
+function validar() {
+	var aux = 1;
+	if(formulario.name.value.length < 10){
+		alert("Nome não pode ter menos de 10 caracteres");
+		aux = 0;
+	}
+	if(formulario.email.value.indexOf('@') < 0 || formulario.email.value.indexOf('.') < 0){
+		alert("Email deve conter os caracteres '@' e '.'");
+		aux = 0;
+	}
+	if(formulario.msg.value.length < 20){
+		alert("Comentário deve ter pelo menos 20 caracteres");
+		aux = 0;
+	}
+	if(formulario.sim.checked == false && formulario.nao.checked == false){
+		alert("Pesquisa Obrigatória");
+		aux = 0;
+	}
+	if(aux){
+		if(formulario.sim.checked == true){
+			alert("Volte sempre à está página!");
+		}
+		else{
+			alert("Que bom que você voltou a visitar esta página!");
+		}
+		return true;
+	}else{
+		return false;
+	}
 }
